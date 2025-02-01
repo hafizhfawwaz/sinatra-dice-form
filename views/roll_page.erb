@@ -1,0 +1,9 @@
+<h1><%= @dice_num %>d<%= @side_num %></h1>
+
+<p><a href="/process_roll<%=@query%>">Roll again</a> | <a href="/">Go back home</a></p>
+
+<% @roll.each do |a_roll|%>
+  <ol>
+    <li><em>Result: </em><b><%=a_roll%></b></li>
+  </ol>
+<% end %>
